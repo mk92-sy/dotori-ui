@@ -28,7 +28,7 @@ jobs:
           npm install --legacy-peer-deps
 
       - name: Install Rollup platform dependency (Linux)
-        run: npm install @rollup/rollup-linux-x64-gnu --save-optional
+        run: npm install @rollup/rollup-linux-x64-gnu --save-optional --legacy-peer-deps
 
       - name: Build Storybook
         run: npm run build-storybook -- --output-dir storybook-static --base-url /dotori-ui/
