@@ -39,6 +39,7 @@
     "@vitejs/plugin-react": "^4.4.1",
     "@vitest/browser": "^3.2.3",
     "@vitest/coverage-v8": "^1.6.1",
+    "ajv": "^8.17.1",
     "eslint": "^9.25.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
