@@ -22,16 +22,16 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Clean install
+      - name: Clean install dependencies
         run: |
           rm -rf node_modules package-lock.json
           npm install --legacy-peer-deps
 
-      - name: Install Rollup platform dependency (Linux)
-        run: npm install @rollup/rollup-linux-x64-gnu --save-optional --legacy-peer-deps
+      - name: Ensure Rollup native binary is installed (Linux workaround)
+        run: npm install @rollup/rollup-linux-x64-gnu --save-optional
 
       - name: Build Storybook
-        run: npm run build-storybook -- --output-dir storybook-static --base-url /dotori-ui/
+        run: npm run build-storybook
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
