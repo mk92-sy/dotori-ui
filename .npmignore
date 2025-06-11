@@ -1,0 +1,30 @@
+# 빌드 결과물 외 나머지는 무시
+/src
+/public
+/.storybook
+/stories
+/example
+/test
+/node_modules
+/.vscode
+/.idea
+
+# 환경 파일
+.env
+.env.* 
+
+# 설정 및 도구 파일
+tsconfig.json
+tsconfig.*.json
+vite.config.ts
+babel.config.js
+jest.config.js
+*.config.js
+*.config.ts
+
+# 기타
+README.md
+.storybook-static
+yarn.lock
+pnpm-lock.yaml
+package-lock.json
