@@ -28,3 +28,5 @@ coverage/
 # IDE 설정
 .vscode/
 .idea/
+*storybook.log
+storybook-static
