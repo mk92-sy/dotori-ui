@@ -14,25 +14,29 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js 20
         uses: actions/setup-node@v4
         with:
           node-version: "20"
 
-      - name: Install dependencies
-        run: npm install --legacy-peer-deps
+      - name: Clean install
+        run: |
+          rm -rf node_modules package-lock.json
+          npm install --legacy-peer-deps
+
+      - name: Install Rollup platform dependency (Linux)
+        run: npm install @rollup/rollup-linux-x64-gnu --save-optional
 
       - name: Build Storybook
-        run: npm run build-storybook
+        run: npm run build-storybook -- --output-dir storybook-static --base-url /dotori-ui/
 
-      - name: Upload artifact
+      - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./storybook-static
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
-        id: deployment

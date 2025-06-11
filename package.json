@@ -20,7 +20,8 @@
     "build": "vite build && tsc --emitDeclarationOnly",
     "prepublishOnly": "yarn build",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "postinstall": "npm install @rollup/rollup-linux-x64-gnu --save-optional"
   },
   "peerDependencies": {
     "react": "^18.0.0",
