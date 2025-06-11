@@ -27,8 +27,8 @@ jobs:
           rm -rf node_modules package-lock.json
           npm install --legacy-peer-deps
 
-      - name: Ensure Rollup native binary is installed (Linux workaround)
-        run: npm install @rollup/rollup-linux-x64-gnu --save-optional
+      - name: Install Rollup platform dependency (Linux)
+        run: npm install @rollup/rollup-linux-x64-gnu --save-optional --legacy-peer-deps
 
       - name: Build Storybook
         run: npm run build-storybook
