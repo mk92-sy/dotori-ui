@@ -13,7 +13,7 @@ export default defineConfig({
     react(),
     dts({
       include: ["src"],
-      rollupTypes: true,
+      rollupTypes: false,
     }),
   ] as PluginOption[],
   build: {
