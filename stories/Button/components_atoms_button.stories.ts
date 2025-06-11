@@ -1,10 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { Button } from "../components/v1/Button";
+import { Button } from "../../src/components/v1/Button";
 
 const meta: Meta<typeof Button> = {
   title: "Components/atoms/Button",
   component: Button,
-  tags: ["autodocs"],
 };
 export default meta;
 

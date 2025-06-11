@@ -7,11 +7,12 @@ export interface ButtonProps
 
 export const Button: React.FC<ButtonProps> = ({
   variant = "primary",
+  className,
   children,
   ...props
 }) => {
   return (
-    <button className={styles[variant]} {...props}>
+    <button className={`${styles[variant]} ${className ?? ""}`} {...props}>
       {children}
     </button>
   );
