@@ -2,7 +2,7 @@
   "name": "dotori-ui",
   "version": "0.0.47",
   "private": false,
-  "homepage": "https://seungyeonee.github.io/dotori-ui/",
+  "homepage": "https://mk92.github.io/dotori-ui/",
   "type": "module",
   "main": "./dist/dotori-ui.es.js",
   "types": "./dist/index.d.ts",
