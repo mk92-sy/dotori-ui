@@ -28,3 +28,8 @@
 - 빠르게 UI를 구축하고 싶은 프론트엔드 개발자
 - 통일된 스타일의 컴포넌트를 재사용하고 싶은 팀
 - React 프로젝트에 바로 적용할 수 있는 컴포넌트가 필요한 분들!
+
+---
+
+** 스토리북 링크 ** [https://mk92-sy.github.io/dotori-ui]
+** npm 라이브러리 링크 ** [https://www.npmjs.com/package/dotori-ui]
