@@ -31,5 +31,5 @@
 
 ---
 
-** 스토리북 링크 ** [https://mk92-sy.github.io/dotori-ui]
-** npm 라이브러리 링크 ** [https://www.npmjs.com/package/dotori-ui]
+**스토리북 링크**  [https://mk92-sy.github.io/dotori-ui]  
+**npm 라이브러리 링크**  [https://www.npmjs.com/package/dotori-ui]  
